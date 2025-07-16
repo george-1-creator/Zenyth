@@ -1,0 +1,312 @@
+<!-- Page: Blog --><!-- Fichier: blog.html --><!DOCTYPE html><html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog - Zenyth</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+          :root { --main-color: #1ea896; }
+          body { font-family: 'Segoe UI', sans-serif;  scroll-behavior: smooth;overflow-x:hidden}
+          .navbar, footer { background-color: var(--main-color); }
+          .nav-link { color: white !important;font-weight: bold; }
+          .fts{font-size: 25px;}
+          .nav-link:hover { text-decoration: underline; }
+          .section-title { color: var(--main-color); font-weight: bold; }
+          .blog-card {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+          }
+          .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+          }
+          .blog-image {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+          }
+          .btn-orange {
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background: #1ea896;
+      color: #fff;
+      padding: 60px 0;
+    }
+
+    footer h5 {
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .social-icons i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .stats {
+      background-color: #fdf2ef;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .stat-item h2 {
+      font-size: 48px;
+      color: var(--main-color);
+    }
+           @media (max-width:768px) {
+            footer{
+              text-align: left;
+            }
+          
+            .footer-links a{
+              display: block;
+              margin-top: 5px;
+            }
+            .cont{
+              margin-top: 35px;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+          <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index.html">Zenyth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav> 
+        
+        <header class="text-center py-5 bg-light">
+          <div class="container">
+            <h1 class="section-title" data-aos="fade-down">Blog Zenyth</h1>
+            <p data-aos="fade-up">Inspirez-vous de nos articles sur l'entrepreneuriat, l'innovation et le digital</p>
+          </div>
+        </header>  <section class="container py-5">
+         
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="blog-card">
+                <img src="image/2.jpg" class="blog-image" alt="startup">
+                <div class="p-3">
+                  <h5 class="section-title">5 étapes pour lancer sa startup</h5>
+                  <p>Découvrez les étapes clés pour transformer une idée en projet concret et viable.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="blog-card">
+                <img src="image/IMG-20241204-WA0013.jpg" class="blog-image" alt="team">
+                <div class="p-3">
+                  <h5 class="section-title">Construire une équipe efficace</h5>
+                  <p>Les secrets pour recruter et motiver une équipe engagée et performante.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="blog-card">
+                <img src="image/4.jpg" class="blog-image" alt="digital marketing">
+                <div class="p-3">
+                  <h5 class="section-title">Optimisez votre stratégie digitale</h5>
+                  <p>Nos conseils pour une présence en ligne percutante et durable.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="blog-card">
+                <img src="image/1.jpg" class="blog-image" alt="startup">
+                <div class="p-3">
+                  <h5 class="section-title">5 étapes pour lancer sa startup</h5>
+                  <p>Découvrez les étapes clés pour transformer une idée en projet concret et viable.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="blog-card">
+                <img src="image/IMG-20241204-WA0013.jpg" class="blog-image" alt="team">
+                <div class="p-3">
+                  <h5 class="section-title">Construire une équipe efficace</h5>
+                  <p>Les secrets pour recruter et motiver une équipe engagée et performante.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="blog-card">
+                <img src="image/IMG-20241204-WA0012.jpg" class="blog-image" alt="digital marketing">
+                <div class="p-3">
+                  <h5 class="section-title">Optimisez votre stratégie digitale</h5>
+                  <p>Nos conseils pour une présence en ligne percutante et durable.</p>
+                  <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                  <div class="blog-card">
+                    <img src="image/1.jpg" class="blog-image" alt="startup">
+                    <div class="p-3">
+                      <h5 class="section-title">5 étapes pour lancer sa startup</h5>
+                      <p>Découvrez les étapes clés pour transformer une idée en projet concret et viable.</p>
+                      <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="blog-card">
+                    <img src="image/1748097801902.png" class="blog-image" alt="team">
+                    <div class="p-3">
+                      <h5 class="section-title">Construire une équipe efficace</h5>
+                      <p>Les secrets pour recruter et motiver une équipe engagée et performante.</p>
+                      <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="blog-card">
+                    <img src="image/img.men.jpeg" class="blog-image" alt="digital marketing">
+                    <div class="p-3">
+                      <h5 class="section-title">Optimisez votre stratégie digitale</h5>
+                      <p>Nos conseils pour une présence en ligne percutante et durable.</p>
+                      <a href="#" class="btn btn-outline-success">Lire l'article</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+        </section>  
+        
+        <footer>
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <h5>Zenyth</h5>
+                <p>Nous créons des expériences digitales puissantes et inspirantes.</p>
+              </div>
+              <div class="col-md-2">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="apropos.html">À propos</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5>Contact</h5>
+                <p><i class="fas fa-envelope"></i> contact@Zenyth.com</p>
+                <p><i class="fas fa-phone"></i> +229 01 00 00 00 00</p>
+              </div>
+              <div class="col-md-3">
+                <h5>Newsletter</h5>
+                <form>
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Votre email">
+                    <button class="btn btn-orange" type="submit">OK</button>
+                  </div>
+                </form>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="fab fa-facebook text-white"></i></a>
+                  <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                  <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+                </div>
+              </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center">&copy; 2025 Mon Site. Tous droits réservés.</p>
+          </div>
+        </footer>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+         <script>
+          AOS.init({
+            duration: 800,       // Durée de l'animation (ms)
+            easing: 'ease-in-out', // Style de transition           
+            offset: 100            // Décalage avant le déclenchement
+          });
+        </script>
+        </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      

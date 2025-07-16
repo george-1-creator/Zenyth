@@ -1,0 +1,301 @@
+
+
+ <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Zenyth</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+      :root {
+        --main-color: #1ea896;
+      }
+      html,body {
+        font-family: 'Segoe UI', sans-serif;
+         scroll-behavior: smooth;
+         overflow-x:hidden;
+      }
+      .navbar, footer {
+        background-color: var(--main-color);
+      }
+      .nav-link {
+        color: white !important;
+        font-weight: bold;
+      }
+      .fts{
+      font-size: 25px;
+      }
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+      .section-title {
+        color: var(--main-color);
+        font-weight: bold;
+      }
+      .service-box {
+        border: 1px solid #ddd;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: #fff;
+        transition: transform 0.3s;
+        height: 100%;
+      }
+      .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .service-img {
+        max-height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      .btn-orange {
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: var(--secondary-color);
+    }
+    .accordion-button {
+  white-space: normal;
+}
+  p, .accordion-body, .blockquote {
+  word-break: break-word;
+}
+
+    footer {
+      background: #1ea896;
+      color: #fff;
+      padding: 60px 0;
+    }
+
+    footer h5 {
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .social-icons i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .stats {
+      background-color: #fdf2ef;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .stat-item h2 {
+      font-size: 48px;
+      color: var(--main-color);
+    }
+   @media (max-width:768px) {
+    footer{
+      text-align: left;
+      }
+          
+    .footer-links a{
+      display: block;
+      margin-top: 5px;
+      }
+      .cont{
+      margin-top: 35px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold fts" href="index.html">Zenyth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-5 bg-light">
+      <div class="container">
+        <h1 class="section-title" data-aos="fade-down">Nos Services</h1>
+        <p data-aos="fade-up">Découvrez comment Zenyth vous accompagne dans votre croissance</p>
+      </div>
+    </header>
+
+    <section class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+          <div class="service-box text-center">
+            <img src="image/for.png" class="img-fluid service-img" alt="Formation" />
+            <h4 class="section-title">Formations</h4>
+            <p>Des formations pratiques et ciblées pour vous doter des compétences clés du monde numérique et entrepreneurial.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-box text-center">
+            <img src="image/consul.png" class="img-fluid service-img" alt="Consulting" />
+            <h4 class="section-title">Consulting</h4>
+            <p>Un accompagnement stratégique personnalisé pour optimiser votre modèle d'affaires, vos processus et votre présence digitale.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-box text-center">
+            <img src="image/start.png" class="img-fluid service-img" alt="Startups" />
+            <h4 class="section-title">Startups</h4>
+            <p>Un accompagnement global dans la création, le lancement et le développement de votre startup à fort potentiel.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-box text-center">
+            <img src="image/reseau.png" class="img-fluid service-img" alt="Réseaux sociaux" />
+            <h4 class="section-title">Gestion des Réseaux Sociaux</h4>
+            <p>Nous créons et gérons votre présence sur les réseaux sociaux pour booster votre visibilité et engagement client.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4" data-aos="fade-up">Portfolio de Réalisations</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <img src="image/cre.png" class="img-fluid rounded shadow-sm" alt="Projet 1">
+            <p class="mt-2 text-center">Accompagnement d'une startup tech vers son premier financement</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <img src="image/eng.png" class="img-fluid rounded shadow-sm" alt="Projet 2">
+            <p class="mt-2 text-center">Formation d'entrepreneurs sur la stratégie digitale</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="image/cam.png" class="img-fluid rounded shadow-sm" alt="Projet 3">
+            <p class="mt-2 text-center">Campagne de visibilité sur les réseaux sociaux pour une PME</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="section-title text-center mb-4" data-aos="fade-up">Témoignages Clients</h2>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <blockquote class="blockquote">
+            <p>"Zenyth a transformé notre manière de travailler. Grâce à leur accompagnement, nous avons doublé notre chiffre d'affaires en 6 mois."</p>
+            <footer class="blockquote-footer">Claire N., fondatrice de GreenUp</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <blockquote class="blockquote">
+            <p>"Une équipe humaine, compétente et impliquée. Leur expertise digitale a été un vrai atout pour notre croissance."</p>
+            <footer class="blockquote-footer">Yassine B., CEO de TechPulse</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4" data-aos="fade-up">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Quels types de startups accompagnez-vous ?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse ">
+              <div class="accordion-body">Nous accompagnons tout type de startup, de la tech aux services, en phase d'idéation, de lancement ou de croissance. Lorem ipsum dolor sit amet consectetur </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Proposez-vous un premier rendez-vous gratuit ?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">Oui, nous offrons un premier échange gratuit pour cerner vos besoins et vous proposer les solutions adaptées. aliquid commodi quidem totam ratione ut debitis alias quas atque possimus!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+<footer>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <h5>Zenyth</h5>
+        <p>Nous créons des expériences digitales puissantes et inspirantes.</p>
+      </div>
+      <div class="col-md-2">
+        <h5>Navigation</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+          <h5>Contact</h5>
+          <p><i class="fas fa-envelope"></i> contact@Zenyth.com</p>
+          <p><i class="fas fa-phone"></i> +229 01 00 00 00 00</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Newsletter</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Votre email">
+            <button class="btn btn-orange" type="submit">OK</button>
+          </div>
+        </form>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram text-white"></i></a>
+          <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-secondary">
+    <p class="text-center">&copy; 2025 Mon Site. Tous droits réservés.</p>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+  AOS.init({
+    duration: 800,       // Durée de l'animation (ms)
+    easing: 'ease-in-out', // Style de transition           
+    offset: 100            // Décalage avant le déclenchement
+  });
+</script>
+  </body>
+</html>
